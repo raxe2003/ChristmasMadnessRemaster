@@ -1,17 +1,14 @@
 ﻿<Properties StartupConfiguration="{81E6AD9A-1BDC-EA75-4083-B9E1DF961B7D}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/movement.cs">
     <Files>
-      <File FileName="Assets/cameraLookAround.cs" Line="20" Column="9" />
       <File FileName="Assets/scripts/movement.cs" Line="41" Column="65" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ChristmasMadnessRemaster" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="scripts" expanded="True">
-                <Node name="movement.cs" selected="True" />
-              </Node>
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="scripts" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -21,7 +18,7 @@
   <MonoDevelop.Ide.ItemProperties.Unity.CollabProxy.Editor PreferredExecutionTarget="722e178f-2e47-4eaa-ad7e-94f44eee6771" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fbfd539d-10b5-43c6-a013-a587d88205f8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f543415f-e628-4489-9baf-45e42e626fd0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

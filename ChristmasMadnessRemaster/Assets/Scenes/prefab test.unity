@@ -784,6 +784,7 @@ MonoBehaviour:
   gravity: -9
   jumpHeight: 1.5
   playerSpeed: 5
+  sprintingSpeed: 20
   cc: {fileID: 1096502068}
 --- !u!143 &1096502068
 CharacterController:
@@ -1257,7 +1258,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 3, y: 3}
+  m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1671355561
 MonoBehaviour:
