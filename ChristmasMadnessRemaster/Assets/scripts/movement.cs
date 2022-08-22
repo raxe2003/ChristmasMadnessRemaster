@@ -10,7 +10,6 @@ public class movement : MonoBehaviour
     public float jumpHeight = 4f;
     public float playerSpeed = 5;
     public float sprintingSpeed = 10;
-    float accelerationSpeed = 1;
     public CharacterController cc;
 
     Vector3 velocity;
