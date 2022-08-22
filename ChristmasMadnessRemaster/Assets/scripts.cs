@@ -11,12 +11,26 @@ public class scripts : MonoBehaviour
 
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
+
+        if(cc.isGrounded == false)
+        {
+            cc.Move(Vector3.down * 5 * Time.deltaTime);
+            Debug.Log("moving down");
+
+        }
+
+        if(cc.isGrounded == true)
+        {
+            Debug.Log("grounded");
+        }
         //Basic Movement
         if (Input.GetKey(KeyCode.W))
         {
@@ -31,8 +45,5 @@ public class scripts : MonoBehaviour
         {
             cc.Move(Vector3.left * playerSpeed * Time.deltaTime);
         }
-
-        
-
     }
 }

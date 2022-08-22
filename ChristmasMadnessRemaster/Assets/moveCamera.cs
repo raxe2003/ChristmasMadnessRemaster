@@ -5,10 +5,10 @@ using UnityEngine;
 public class moveCamera : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float Xsensitivity = 100f;
-    public float Ysensitivity = 100f;
+    private float Xsensitivity = 1000f;
+    private float Ysensitivity = 1000f;
     public Transform player;
-    public Transform camera;
+    public Transform playerCamera;
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class moveCamera : MonoBehaviour
 
         // moze x
         float moveX = Input.GetAxis("Mouse Y") * Ysensitivity;
-        camera.Rotate(-moveX * Time.deltaTime, 0, 0);
+        playerCamera.Rotate(-moveX * Time.deltaTime, 0, 0);
 
     }
 }
