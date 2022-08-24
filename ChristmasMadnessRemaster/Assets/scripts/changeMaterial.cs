@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class changeMaterial : MonoBehaviour
 {
-    public Material oldMaterial;
+
     public Material newMaterial;
     public Renderer presentBox;
+    public GameObject box;
 
     public void materialChange(string whichMaterial)
     {
-       if(whichMaterial == "new")
+        if (whichMaterial == "new")
         {
             presentBox.material = newMaterial;
-        }else if(whichMaterial == "old")
-        {
-            presentBox.material = oldMaterial;
+            Destroy(box);
         }
+
+
+
+
+
+
     }
-    
-    
-
-    
-
-
 }
