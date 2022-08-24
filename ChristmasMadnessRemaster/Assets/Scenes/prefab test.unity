@@ -1909,7 +1909,7 @@ GameObject:
   - component: {fileID: 2070741395}
   m_Layer: 0
   m_Name: presentBox1
-  m_TagString: Untagged
+  m_TagString: presents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2004,6 +2004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9af7fb2e72d0174b80ffc243d5a4853, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oldMaterial: {fileID: 0}
   newMaterial: {fileID: 2100000, guid: b04860dcb810ada48a1332ae3672ede5, type: 2}
   presentBox: {fileID: 2070741392}
 --- !u!4 &2070983929 stripped
