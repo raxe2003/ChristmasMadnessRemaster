@@ -8,7 +8,7 @@ public class selectPresent : MonoBehaviour
     // Start is called before the first frame update
     public float range;
     public Camera playerCamera;
-    
+    public Animation slideAnimation;
     public Text scoreBar;
     private int score = 0;
 
@@ -23,21 +23,28 @@ public class selectPresent : MonoBehaviour
     {
         changeMaterial changeM;
         RaycastHit rCast;
-        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out rCast, range) && rCast.transform.tag == "presents" && Input.GetKeyDown(KeyCode.E))
+        if (Input.GetButtonDown("Fire1"))
         {
-
-            changeMaterial ch = rCast.collider.GetComponent<changeMaterial>();
-            changeM = ch;
-            if (ch != null)
+            if(Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out rCast, range) && rCast.transform.tag == "presents")
             {
-                Debug.Log("got materail");
-                ch.materialChange("new");
+                changeMaterial ch = rCast.collider.GetComponent<changeMaterial>();
+                changeM = ch;
+                if (ch != null)
+                {
+                    Debug.Log("got materail");
+                    ch.materialChange("new");
+                }
+                // Debug.Log("hit " + rCast.transform.name);
+                score += 1;
+                scoreBar.text = "SCORE: " + score;
+                Debug.Log("score is: " + score);
             }
-            Debug.Log("hit " + rCast.transform.name);
-            score += 1;
-            scoreBar.text = "SCORE: " + score;
+
+            slideAnimation.Play();
+            
 
         }
+
         
     }
 }
