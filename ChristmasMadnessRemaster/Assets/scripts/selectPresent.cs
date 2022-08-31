@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class selectPresent : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class selectPresent : MonoBehaviour
     public float range;
     public Camera playerCamera;
     public Animation slideAnimation;
-    public Text scoreBar;
+    public TMP_Text scoreBar;
     private int score = 0;
 
 
